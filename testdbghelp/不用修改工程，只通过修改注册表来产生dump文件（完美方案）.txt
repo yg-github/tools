@@ -1,0 +1,9 @@
+参考地址：
+	https://www.cnblogs.com/hushaojun/p/6388153.html
+具体方法：
+	通过改注册表的设置让操作系统在程序crash的时候自动生成dump，并放到特定的目录下
+	增加注册表HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error Reporting\LocalDumps 
+	其中DumpType代表的含义是：
+	0 = Create a custom dump  
+	1 = Mini dump  
+	2 = Full dump  
